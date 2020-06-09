@@ -121,19 +121,6 @@ describe('Game Stat Trackers', () => {
             let assertion = get(item)
             expect(assertion).toMatchObject(expected)
         })
-        it('if enhancement is > 0, name should include level', () => {
-            let item = {
-                name: "staff",
-                durability: 65,
-                enhancement: 17
-            }
-            let expected = {
-                name: "[+17]staff",
-                durability: 65,
-                enhancement: 17
-            }
-            let assertion = get(item)
-            expect(assertion).toMatchObject(expected)
-        })
+        it.todo('if enhancement is > 0, name should include level')
     })
 })
