@@ -10,9 +10,7 @@ describe('Game Stat Trackers', () => {
         it.todo('on item change, durability should remain')
     })
     describe('__Fail__: creates a new/modified Item with fail', () =>{
-        it.todo('if enhancement is < 15, remove 5 durability')
-        it.todo('if enhancement is > 15, remove 10 durability')
-        it.todo('if enhancement is > 16, the item will also loose one enhancement level')
+        it.todo('')
     })
     describe('__GET__: stretch', () => {
         it.todo('read stretch for more')
