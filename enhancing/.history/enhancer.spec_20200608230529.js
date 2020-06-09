@@ -76,34 +76,8 @@ describe('Game Stat Trackers', () => {
             let assertion = fail(item)
             expect(assertion).toMatchObject(expected)
         })
-        it('if enhancement is >= 15, remove 10 durability', () => {
-            let item = {
-                name: "staff",
-                durability: 65,
-                enhancement: 15
-            }
-            let expected = {
-                name: "staff",
-                durability: 55,
-                enhancement: 15
-            }
-            let assertion = fail(item)
-            expect(assertion).toMatchObject(expected);
-        })
-        it('if enhancement is > 16, the item will also loose one enhancement level', () => {
-            let item = {
-                name: "staff",
-                durability: 65,
-                enhancement: 17
-            }
-            let expected = {
-                name: "staff",
-                durability: 55,
-                enhancement: 16
-            }
-            let assertion = fail(item)
-            expect(assertion).toMatchObject(expected)
-        })
+        it.todo('if enhancement is > 15, remove 10 durability')
+        it.todo('if enhancement is > 16, the item will also loose one enhancement level')
     })
     describe('__GET__: stretch', () => {
         it.todo('read stretch for more')
